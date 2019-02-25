@@ -1,0 +1,501 @@
+/*=======================================
+                Fonts
+=========================================*/
+
+/* Butler */
+@font-face {
+    font-family: 'Butler';
+    src: url(../fonts/Butler.eot);
+    src: url(../fonts/Butler.woff2) format('woff2'),
+         url(../fonts/Butler.ttf) format('truetype'),
+         url(../fonts/Butler.svg#Butler) format('svg'),
+         url(../fonts/Butler.eot?#iefix) format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Butler';
+    src: url(../fonts/Butler-Medium.eot);
+    src: url(../fonts/Butler-Medium.woff2) format('woff2'),
+         url(../fonts/Butler-Medium.ttf) format('truetype'),
+         url(../fonts/Butler-Medium.svg#Butler-Medium) format('svg'),
+         url(../fonts/Butler-Medium.eot?#iefix) format('embedded-opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Butler Stencil */
+@font-face {
+    font-family: 'Butler Stencil';
+    src: url(../fonts/ButlerStencil.eot);
+    src: url(../fonts/ButlerStencil.woff2) format('woff2'),
+         url(../fonts/ButlerStencil.ttf) format('truetype'),
+         url(../fonts/ButlerStencil.svg#ButlerStencil) format('svg'),
+         url(../fonts/ButlerStencil.eot?#iefix) format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Butler Stencil';
+    src: url(../fonts/ButlerStencil-Light.eot);
+    src: url(../fonts/ButlerStencil-Light.woff2) format('woff2'),
+         url(../fonts/ButlerStencil-Light.ttf) format('truetype'),
+         url(../fonts/ButlerStencil-Light.svg#ButlerStencil-Light) format('svg'),
+         url(../fonts/ButlerStencil-Light.eot?#iefix) format('embedded-opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Butler Stencil';
+    src: url(../fonts/ButlerStencil-Medium.eot);
+    src: url(../fonts/ButlerStencil-Medium.woff2) format('woff2'),
+         url(../fonts/ButlerStencil-Medium.ttf) format('truetype'),
+         url(../fonts/ButlerStencil-Medium.svg#ButlerStencil-Medium) format('svg'),
+         url(../fonts/ButlerStencil-Medium.eot?#iefix) format('embedded-opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Ebrima */
+@font-face {
+    font-family: 'Ebrima';
+    src: url(../fonts/Ebrima.eot);
+    src: url(../fonts/Ebrima.woff2) format('woff2'),
+         url(../fonts/Ebrima.ttf) format('truetype'),
+         url(../fonts/Ebrima.svg#Ebrima) format('svg'),
+         url(../fonts/Ebrima.eot?#iefix) format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ebrima';
+    src: url(../fonts/Ebrima-Bold.eot);
+    src: url(../fonts/Ebrima-Bold.woff2) format('woff2'),
+         url(../fonts/Ebrima-Bold.ttf) format('truetype'),
+         url(../fonts/Ebrima-Bold.svg#Ebrima-Bold) format('svg'),
+         url(../fonts/Ebrima-Bold.eot?#iefix) format('embedded-opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+html { 
+    height: 100%;
+    font-size: 62.5%;  /* 10px */  
+    overflow-x: hidden;
+}
+
+body {
+    font: 400 1.6rem/3.6rem 'Ebrima', sans-serif;
+    color: #5c6571;
+    background: #fff;
+}
+
+h1 {
+    font: 500 12rem/13.3rem 'Butler', serif;
+    color: #12161b;
+}
+
+h2 {
+   font: 500 7.8rem/8rem 'Butler', serif;
+   color: #12161b;
+}
+
+h3 {
+   font: 500 3.5rem/4.5rem 'Butler', serif;
+   color: #12161b;
+}
+[type=button],
+[type=reset],
+[type=submit],
+button { 
+    -webkit-appearance: none;
+}
+button:focus { outline: 0; }
+section h2:after {
+    content: '';
+    width: 12.7rem;
+    height: .4rem;
+    background: #3447be;
+    display: block;
+    margin: 4rem auto;
+}
+section h2.text-white:after { background: #fff; }
+.container { 
+    max-width: 117rem !important;
+    position: relative;
+    z-index: 1;
+}
+
+header {
+    width: 100%;
+    max-width: 180rem;
+    margin: 0 auto;
+}
+
+
+.logo {
+    font: 500 6.4rem/7rem 'Butler', serif;
+    color: #383d5c;
+}
+.logo:hover {
+    color: #383d5c;
+    text-decoration: none;
+}
+.btn {
+    width: 14rem;
+    padding: 1.4rem 2rem;
+    border-radius: 5rem;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    -webkit-transition: ease 0.5s;
+    -moz-transition: ease 0.5s; 
+      -o-transition: ease 0.5s;
+         transition: ease 0.5s;
+}
+.btn:hover { color: #fff; }
+
+.btn--pink { background: #f64ea3; }
+.btn--pink:hover { background: #c43e82; }
+
+.btn--dark { background: #383d5c; }
+.btn--dark:hover { background: #272a40; }
+
+.hero {
+    background: url("../assets/hero.jpg") no-repeat center center / cover ;
+}
+
+.hero__container {
+    width: 100%;
+    max-width: 180rem;
+    /* padding: 33rem 0; */
+    margin: 0 auto;
+    position: relative;
+}
+.hero__container h1 {
+    font-family: 'Butler Stencil', sans-serif;
+    font-weight: 500;
+    line-height: normal;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+@media (min-width: 480px) {
+    .hero__container h1 {
+        font-size: calc(1.6rem + ((1vw - 3.2px) * 22.375));
+        /* font-size: calc(1.6rem + ((1vw - 0.3rem) * 39.7778)); */
+    }
+}
+@media (min-width: 1920px) {
+    .hero__container h1 {
+        font-size: 37.4rem;
+    }
+}
+.hero__container .model {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      height: auto;
+}
+
+/*=======================================
+            Training & Gym Yoga 
+=========================================*/
+
+.offers { padding: 8rem 0; }
+.offers__link { 
+    display: inline-block;
+    position: relative;
+ }
+.offers__link--yoga { margin-top: 7.5rem; }
+.offers__link--training { margin-top: 3rem; }
+.offers__link--cardio {
+    -webkit-transform: translateY(-26%);
+        -ms-transform: translateY(-26%);
+            transform: translateY(-26%);
+}
+.offers__figure,
+.post__figure,
+.blog-article__figure {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 0;
+}
+.offers__figure:after,
+.post__figure::after,
+.features::after,
+.blog-article__figure::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: -moz-linear-gradient(68deg, #d033cb 0%, #3046be 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3046be), color-stop(100%, #d033cb)); /* safari4+,chrome */
+    background: -webkit-linear-gradient(68deg, #d033cb 0%, #3046be 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(68deg, #d033cb 0%, #3046be 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(68deg, #d033cb 0%, #3046be 100%); /* ie10+ */
+    background: linear-gradient(22deg, #d033cb 0%, #3046be 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3046be', endColorstr='#d033cb',GradientType=0 ); /* ie6-9 */
+    opacity: .5;
+    border-radius: 10px;
+}
+.post__figure::after {
+    border-radius: 0;
+}
+.offers__title {
+    position: absolute;
+    bottom: 3rem;
+    left: 0;
+    right: 0;
+    margin: 0;
+    text-align: center;
+    color: #fcfcfc;
+}
+
+/*=======================================
+                Gym Style 
+=========================================*/
+.post__wrapper {
+    padding-left: 3rem;
+}
+.post__date,
+.blog-article__category {
+    font: 300 1.4rem/1.8rem 'Butler Stencil', serif;
+    color: #707a87;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    margin-bottom: 2.5rem;
+    display: block;
+}
+.post__title { margin-bottom: 2rem; }
+.post__btn,
+.feature__btn,
+.blog-article__btn {
+    width: 17rem;
+    padding: 1.6rem 1rem;
+    margin-top: 1.5rem;
+    border-radius: 6px;
+    background: #383d5c;
+}
+.post__btn:hover,
+.feature__btn:hover,
+.blog-article__btn:hover {
+    background: #fff;
+    color: #384d5c;
+    box-shadow: 0px 18px 16px 0px rgba(225, 228, 231, .63);
+}
+/*=======================================
+            Plan Your Visit
+=========================================*/
+.features {
+    position: relative;
+    padding: 10.5rem 0 9rem;
+    background: url("../assets/visit_bg.jpg") no-repeat center center / cover ;
+}
+.feature {
+    min-height: 53rem;
+    padding: 6.5rem 4rem 6rem 4rem;
+    margin-bottom: 3rem;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 22px 48.97px 10.03px rgba(25, 18, 124, .28); 
+}
+.feature__figure { height: 10.3rem; }
+.feature__btn { margin-top: 0; }
+
+/*=======================================
+           News & Social
+=========================================*/
+.blog {padding: 10rem 0; }
+.blog-article__figure { float: right; }
+.owl-carousel .owl-stage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+.owl-theme .owl-nav.disabled + .owl-dots { margin-top: 50px !important; }
+.owl-dots .owl-dot span { background: #ccdeee !important; }
+.owl-dots .owl-dot.active span, 
+.owl-dots .owl-dot:hover span {
+    background: #b000ca !important;
+}
+.owl-dots .owl-dot.active span {
+    width: 1.2rem !important;
+    height: 1.2rem !important;
+}
+.owl-dot:focus,
+.owl-dot span:focus {
+    outline: 0;
+}
+.blog-article__title {
+    margin-bottom: 1.5rem;
+    font-size: 3rem;
+}
+.blog-article__summary {
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+.blog-article__figure::after { opacity: .4; }
+
+/*=======================================
+           Footer
+=========================================*/
+
+footer ul {
+    list-style: none;
+}
+footer ul li a {
+    font-size: 1.6rem;
+    line-height: 4rem;
+    color: #5c6571;
+    -webkit-transition: color 300ms;
+            transition: color 300ms; 
+}
+.footer-nav__logo:hover,
+footer ul li a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.footer-nav__logo {
+    font: 500 4.5rem/7rem 'Butler', serif;
+    color: #fff;
+}
+
+.footer-nav__container {
+    padding: 10rem 10rem 8.4rem;
+    background: #12161b;
+}
+.footer__social {
+    padding: 1rem 10rem;
+    background: #0b0d10;
+}
+.copyright {
+    margin-bottom: 0;
+    font-size: 1.3rem;
+    line-height: 3.6rem;
+    color: #5c6571;
+}
+.socials__container {
+    text-align: right;
+}
+.socials__container img {
+    margin-right: 2rem;
+}
+
+/*=======================================
+           Join Us
+=========================================*/
+.join-us {
+    padding: 20.6rem 1.5rem 20.6rem 26rem;
+    margin: 0 11.5rem 31.5rem 11.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 15px 18px 0px rgba(83, 83, 83, 0.22); 
+    background: url("../assets/join-us-bg.jpg") no-repeat center center / cover;
+}
+.join-us > * {
+    position: relative;
+    z-index: 2;
+}
+.join-us::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: -webkit-gradient(linear, right top, left bottom, from(#0091ff), color-stop(#657ef6), color-stop(#9365e4), color-stop(#b646c9), to(#ce0aa5));
+    background-image: -webkit-linear-gradient(right top, #0091ff, #657ef6, #9365e4, #b646c9, #ce0aa5);
+    background-image: -moz-linear-gradient(right top, #0091ff, #657ef6, #9365e4, #b646c9, #ce0aa5);
+    background-image: -o-linear-gradient(right top, #0091ff, #657ef6, #9365e4, #b646c9, #ce0aa5);
+    background-image: linear-gradient(to left bottom, #0091ff, #657ef6, #9365e4, #b646c9, #ce0aa5);
+    opacity: .7;
+    z-index: 1;
+}
+.btn--white { color: #383d5c; }
+.btn--white:hover {
+    background: #383d5c;
+    color: #fff;
+}
+.join-us__btn {
+    width: 20rem;
+    padding: 1.6rem 1rem;
+    margin-top: 1.5rem;
+    border-radius: 6px;
+    background: #ffffff;
+    font-weight: 700;
+    font-size: 1.5rem;    
+}
+.join-us__form {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.join-us__form .form-control {
+    padding: 1rem 4rem;
+    min-width: 55rem;
+    height: 9rem;
+    border-radius: 0;
+    border: 0;
+    box-shadow: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #383d5c;
+}
+.btn--submit {
+    color: transparent;
+    background: url(../assets/arrow-right.svg) #fff no-repeat center;
+    -webkit-background-size: 2.5rem 9rem;
+       -moz-background-size: 2.5rem 9rem;
+         -o-background-size: 2.5rem 9rem;
+            background-size: 2.5rem 9rem;
+    width: 2.5rem;
+    height: 9rem;
+    border: 0;
+    padding: 0 5rem;
+}
+.join-us__form .form-control::-webkit-input-placeholder {
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color: #383d5c;
+  }
+  .join-us__form .form-control::-moz-placeholder {
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color: #383d5c;
+  }
+  .join-us__form .form-control:-ms-input-placeholder {
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color: #383d5c;
+  }
+  .join-us__form .form-control:-moz-placeholder {
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color: #383d5c;
+  }
+
