@@ -94,6 +94,14 @@ body {
     font: 400 1.6rem/3.6rem 'Ebrima', sans-serif;
     color: #5c6571;
     background: #fff;
+    -webkit-transition: ease .5s;
+       -moz-transition: ease .5s;
+         -o-transition: ease .5s;
+            transition: ease .5s;
+    opacity: 0;
+}
+body.load-ready {
+    opacity: 1;
 }
 
 h1 {
@@ -202,8 +210,9 @@ header nav ul {
     margin: 0;
     list-style: none;
 }
-header nav ul li {
+header li {
     display: inline-block;
+    list-style: none;
 }
 header nav ul li:nth-child(2) {
     margin: 0 5rem;
