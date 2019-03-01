@@ -1,51 +1,139 @@
-$(window).on('load', function() {
+$(window).on('load', function () {
     $('body').addClass('load-ready');
 });
 
-$(document).ready(function() {
-  $('.owl-carousel').owlCarousel({
-    margin: 60,
-    loop: true,
-    items: 1,
-    stagePadding: 60,
-    lazyLoad: true,
-    responsive:{
-          0: {
-              items: 1,
-              stagePadding: 60
-          },
-          600: {
-              items: 1,
-              stagePadding: 100
-          },
-          1000: {
-              items: 1,
-              stagePadding: 200
-          },
-          1200: {
-              items: 1,
-              stagePadding: 300
-          },
-          1400: {
-              items: 1,
-              stagePadding: 400
-          },
-          1600: {
-              items: 1,
-              stagePadding: 450
-          },
-          1800: {
-              items: 1,
-              stagePadding: 535
-          },
-          2560: {
-              item: 1,
-              stagePadding: 720
-          }
-      },
-      autoplay: true,
-      autoplayTimeout: 10000,
-      autoplayHoverPause: true
+$(document).ready(function () {
+    
+    $(document).ready(initialise);
+    $(window).resize(initialise);
+
+    function initialise() {
+        scrollAnimations();
+        appendBtns();
+        paddingMain();
+        marginCardioBox();
+    }
+    
+    // Animations on scroll
+    function scrollAnimations() {
+        if ($(window).outerWidth() > 991) {
+            var fadeUpElements = ['.offers__link--training', '.feature.up', '.join-us__btn'];
+            var fadeDownElements = ['.offers h1', '.posts h1', '.features h1', '.blog h1', '.join-us h1', '.feature.down', '.badge', '.offers__link--gym'];
+            var fadeLeftElements = ['.offers__link--cardio', '.join-us p', '.post__figure--first', '.post__figure--third', '.post__info-wrapper--second'];
+            var fadeRightElements = ['.offers__link--yoga', '.join-us__form', '.post__info-wrapper--first', '.post__info-wrapper--third', '.post__figure--second'];
+
+            fadeUpElements.forEach(function (el) {
+                $(el).waypoint(function () {
+                    $(el).addClass('fadeInUp');
+                }, {
+                    offset: '100%'
+                });
+            });
+            fadeDownElements.forEach(function (el) {
+                $(el).waypoint(function () {
+                    $(el).addClass('fadeInDown');
+                }, {
+                    offset: '80%'
+                });
+            });
+            fadeLeftElements.forEach(function (el) {
+                $(el).waypoint(function () {
+                    $(el).addClass('fadeInLeft');
+                }, {
+                    offset: '80%'
+                });
+            });
+            fadeRightElements.forEach(function (el) {
+                $(el).waypoint(function () {
+                    $(el).addClass('fadeInRight');
+                }, {
+                    offset: '80%'
+                });
+            });
+        } else {
+            $('.opacity_0').each(function () {
+                $(this).removeClass('opacity_0');
+            })
+        }
+    }
+
+    // Move buttons in mobile nav
+    function appendBtns() {
+        if ($(window).outerWidth() < 768) {
+            if ($('.btn__container').length == 0) {
+                $('header .btn')
+                    .wrap('<li class="btn__container">')
+                    .parent()
+                    .appendTo('.main-nav ul');
+            }
+        } else {
+            $('header .btn').appendTo('.btns');
+            $('.btn__container').remove();
+        }
+    }
+
+    // Padding of <main> form <header>
+    function paddingMain() {
+        var headerHeight = $('header').innerHeight();
+        var mainEl = $('main');
+        mainEl.css('padding-top', headerHeight)
+    }
+    
+    // Cardio Training Box margin from Gym Box
+    function marginCardioBox() {
+        var gymCol = $('.col--gym').outerHeight();
+        var gymLinkBox = $('.offers__link--gym').outerHeight();
+        var diffHeight = gymCol - gymLinkBox;
+        var cardioLinkBox = $('.offers__link--cardio');
+        $(cardioLinkBox).css('margin-top', -(diffHeight - 30));
+    };
+
+    // Owl carousel
+    $('.owl-carousel').owlCarousel({
+        margin: 60,
+        loop: true,
+        items: 1,
+        stagePadding: 60,
+        lazyLoad: true,
+        dotsSpeed: 1500,
+        dragEndSpeed: 1500,
+        navSpeed: 1500,
+        autoplaySpeed: 2000,
+        autoplay: true,
+        autoplayTimeout: 10000,
+        responsive: {
+            0: {
+                items: 1,
+                stagePadding: 0
+            },
+            1000: {
+                items: 1,
+                stagePadding: 200
+            },
+            1200: {
+                items: 1,
+                stagePadding: 250
+            },
+            1400: {
+                items: 1,
+                stagePadding: 400
+            },
+            1600: {
+                items: 1,
+                stagePadding: 450
+            },
+            1800: {
+                items: 1,
+                stagePadding: 535
+            },
+            2560: {
+                item: 1,
+                stagePadding: 720
+            }
+        },
+        autoplay: true,
+        autoplayTimeout: 10000,
+        autoplayHoverPause: true
     });
 
     // check scroll position
@@ -59,9 +147,9 @@ $(document).ready(function() {
     });
 
     // click toggle button for mobile nav
-    $('.second-button').on('click', function () {
-        $('.open-nav').toggleClass('open');
-        $('#main-nav').toggleClass('visible');
+    $('.open-nav').on('click', function () {
+        $(this).toggleClass('open');
+        $('.main-nav').toggleClass('visible');
     });
 
     // Search
@@ -80,32 +168,9 @@ $(document).ready(function() {
         }
     });
 
-    $(document).ready(initialise);
-    $(window).resize(initialise);
-    
-    function initialise() {
-        paddingMain();
-        appendBtns();
-    }
-    function appendBtns() {
-        if($(window).innerWidth() < 768) {
-            var $addedDiv = $('header .btn').wrap('<li>').parent();
-            if ($addedDiv.length == 0) {
-                $addedDiv.appendTo('#main-nav ul');
-            }
-        }
-    }
-
-    function paddingMain() {
-        var headerHeight = $('header').innerHeight();
-        var mainEl = $('main');
-        mainEl.css('padding-top', headerHeight)
-    }
-
-
-
-    if ($(".hero__container h1").length) {
-        backgroundMouseMove(".hero__container h1", 25);
+    // Move Hero Heading on MouseOver
+    if ($(".hero__container svg").length) {
+        backgroundMouseMove(".hero__container svg ", 25);
     }
 
     function backgroundMouseMove(item, moveDistance, marginPosition) {
@@ -134,27 +199,23 @@ $(document).ready(function() {
         }, false);
     }
 
+    // Back To Top
+    $(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 500) {
+                $('.back-top').fadeIn();
+            } else {
+                $('.back-top').fadeOut();
 
-
-
-
-    // var $window = $(window),
-    //     win_height_padded = $window.height() * 1.1;
-
-    // $window.on('scroll', animate);
-
-    // function animate() {
-    //     if ($window.width() > 1199) {
-    //         var scrolled = $window.scrollTop();
-
-    //         $('.animate:not(.animated)').each(function () {
-    //             var $this = $(this),
-    //                 offsetTop = $this.offset().top;
-
-    //             if (scrolled + win_height_padded > offsetTop) {
-    //                 $this.removeClass('animate').addClass('animated ' + $this.data('animation'));
-    //             }
-    //         });
-    //     }
-    // }
+            }
+        });
+        // scroll body to 0px on click
+        $('.back-top').click(function () {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
+    });
 });
+document.addEventListener("touchstart", function(){}, true);

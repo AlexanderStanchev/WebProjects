@@ -1,25 +1,18 @@
-/*=======================================
-                Helpers
-=========================================*/
-.mtb_0 {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-.mt_5 { margin-top: 5px; }
-.mt_10 { margin-top: 10px; }
-.mt_15 { margin-top: 15px; }
-.mb_10 { margin-bottom: 10px; }
-.mb_70 { margin-bottom: 70px; }
-.mb_80 { margin-bottom: 80px; }
-.mb_120 { margin-bottom: 120px; }
+/* Margins */
+.mtb_0 { margin-top: 0; margin-bottom: 0; }
+.mt_5 { margin-top: .5rem; }
+.mt_10 { margin-top: 1rem; }
+.mt_15 { margin-top: 1.5rem; }
+.mb_10 { margin-bottom: 1rem; }
+.mb_70 { margin-bottom: 7rem; }
+.mb_80 { margin-bottom: 8rem; }
+.mb_120 { margin-bottom: 12rem; }
+.mlr_auto { margin-left: auto; margin-right: auto; }
+.ml_20 { margin-left: 2rem; }
 
-.ml_20 { margin-left: 20px; }
+/* Widths */
+.mw_540 { max-width: 54rem;}
+.mw_830 { max-width: 83rem;}
 
-.mlr_auto { 
-    margin-left: auto;
-    margin-right: auto;
-}
-.mw_540 { max-width: 540px;}
-.mw_830 { max-width: 830px;}
-.mw_1800 { max-width: 1800px; }
-
+/* Opacity */
+.opacity_0 { opacity: 0; }

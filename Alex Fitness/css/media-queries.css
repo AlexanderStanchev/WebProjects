@@ -1,127 +1,33 @@
 @media (max-width: 1440px) {
+
+    /* Header */
+    .hero__img--model {
+        height: 70%;
+    }
+
+    .main-nav ul li:nth-child(2) {
+        margin: 0 3rem
+    }
+
+    /* Join us */
     .join-us {
         padding: 20.6rem 1.5rem 20.6rem 6rem;
-        margin: 0 3rem 31.5rem 3rem;
+        margin: 0 5rem 31.5rem 5rem;
     }
 
-    .footer-nav__logo {
-        font-size: 4rem;
-    }
-
+    /* Footer */
     .footer-nav__container {
         padding: 10rem 5rem 8.4rem;
     }
 
-    .hero__container {
-        height: 92rem;
-    }
-
-    .hero__container .model {
-        height: 75%;
-    }
-
-    header nav ul li:nth-child(2) {
-        margin: 0 3rem
+    .footer-social {
+        padding: 2.2rem 5rem;
     }
 }
-@media (max-width: 991.98px) {
-/*------------------------------------------
-            Header
---------------------------------------------*/
-    header {
-        padding: 3rem 1.5rem 4rem;
-    }
-    .scroll-not-top header {
-        padding: 1.5rem 1.5rem 2.5rem;
-    }
-    /* Logo */
-    .logo {
-        padding-bottom: 2rem;
-        font-size: 4.6rem;
-    }
-    .scroll-not-top .logo {
-        padding-bottom: 0;
-        font-size: 4rem;
-    }
-}
-@media (max-width:767.98px) {
-/*-------------------------------
-            Header
----------------------------------*/
-    /* Navigation */
-    #main-nav {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        background: #fff;
-        text-align: center;
-        z-index: 2;
-    }
-    #main-nav.visible {
-        display: block;
-        -webkit-transition: ease .5s;
-        -moz-transition: ease .5s;
-        -o-transition: ease .5s;
-        transition: ease .5s;
-        padding: 4.5rem 0;
-    }
-    header nav ul li {
-        display: block;
-        margin: 0;
-    }
-
-    /* Hero */
-    .hero__container { 
-        height: 60rem; 
-    }
-    .hero__container .model {
-        height: 75%; 
-    }
-
-    /* Posts */
-    .post__wrapper {
-        padding-top: 3rem;
-        padding-left: 0;
-    }
-}
-@media (max-width: 575.98px) {
-    .feature {
-        min-height: auto;
-        padding: 4rem 2rem;
-    }
-    .hero__container {
-        height: 25rem;
-    }
-    .hero__container h1 {
-        font-size: 9rem;
-    }
-}
-
-
-@media (min-width: 768px) and (max-width: 991.98px) {
-    .hero__container {
-        height: 60rem;
-    }
-
-    .hero__container .model {
-        height: 75%;
-    }
-
-    .feature {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 4rem 4rem 4rem 4rem;
-    }
-}
-
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-/*-------------------------------
-            Header
----------------------------------*/
+
+    /* Header */
     header {
         background: #fff;
         padding: 3.3rem 3rem 3.2rem;
@@ -131,42 +37,259 @@
     .logo {
         font-size: 5.1rem;
     }
+
     .scroll-not-top .logo {
         font-size: 4.6rem;
     }
 
     /* Navigation */
-    header nav ul li a {
-        font-size: 1.3rem;
+    .main-nav ul li a {
+        font-size: 1.2rem;
     }
-    header nav ul li:nth-child(2) {
+
+    .main-nav ul li:nth-child(2) {
         margin: 0 1.5rem !important;
     }
+
+    /* Features - Plan Your Visit */
     .feature {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        padding: 4.5rem 3rem 4rem 3rem;
+    }
+
+    .feature__btn {
+        bottom: 5.5rem;
     }
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 991.98px) {
+
+    /* Header */
+    header {
+        padding: 2rem 0;
+    }
+
+    .scroll-not-top header {
+        padding: 1.5rem 0;
+    }
+
+    /* Logo */
+    .logo {
+        font-size: 4.6rem;
+    }
+
+    .scroll-not-top .logo {
+        padding-bottom: 0;
+        font-size: 4rem;
+    }
+
+    /* Hero Section */
     .hero__container {
-        height: 112rem;
+        height: 70rem;
+    }
+
+    .hero__text {
+        max-width: 77rem;
+        position: absolute;
+        top: 75%;
+        -webkit-transform: translateY(-75%);
+            -ms-transform: translateY(-75%);
+                transform: translateY(-75%);
+        line-height: 2.7rem;
+        font-size: 1.4rem;
+    }
+
+    .hero__container svg {
+        max-width: 77rem;
+        left: 0;
+    }
+
+    .hero__img--logo {
+        top: 27%;
+        -webkit-transform: translateY(-27%);
+            -ms-transform: translateY(-27%);
+                transform: translateY(-27%);
+    }
+    
+    /* Join us */
+    .join-us__form .form-control { min-width: 22rem; }
+
+    /* Disable animations on scroll */
+    .animated {
+        /*CSS transitions*/
+         -webkit-transition-property: none !important;
+            -moz-transition-property: none !important;
+              -o-transition-property: none !important;
+             -ms-transition-property: none !important;
+                 transition-property: none !important;
+        /*CSS transforms*/
+        -webkit-transform: none !important;
+           -moz-transform: none !important;
+             -o-transform: none !important;
+            -ms-transform: none !important;
+                transform: none !important;
+        /*CSS animations*/
+        -webkit-animation: none !important;
+           -moz-animation: none !important;
+             -o-animation: none !important;
+            -ms-animation: none !important;
+                animation: none !important;
     }
 }
-@media (min-width: 576px) {
-    .hero__container h1 {
-        font-size: calc(1.6rem + ((1vw - 2.2px) * 22.375));
-        /* font-size: calc(1.6rem + ((1vw - 0.3rem) * 39.7778)); */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    /* Features - Plan Your Visit */
+    .feature {
+        min-height: 48rem;
+        padding: 4rem 4rem 4rem 4rem;
+    }
+
+    /* Join us */
+    .join-us h1 {
+        font-size: 7rem;
+        line-height: 8.3rem;
     }
 }
-@media (min-width: 1920px) {
-    .hero__container h1 {
-        font-size: 37.4rem;
+
+@media (max-width:767.98px) {
+
+    /* Navigation */
+    .main-nav {
+        position: absolute;
+        top: -40rem;
+        left: 0;
+        right: 0;
+        background: #fff;
+        text-align: center;
+        z-index: 2;
+        opacity: 0;
     }
+
+    .main-nav.visible {
+        top: 0;
+        padding: 4.5rem 0;
+        opacity: 1;
+        -webkit-transition: ease .5s;
+           -moz-transition: ease .5s;
+             -o-transition: ease .5s;
+                transition: ease .5s;
+        -webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .05);
+                box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .05);
+    }
+
+    .main-nav ul li {
+        display: block;
+        margin: 0;
+    }
+
+    .btn__container { margin-top: 1.5rem !important; }
+    .btn__container a { margin-left: 0; }
+
+    /* Features - Plan Your Visit */
+    .feature { min-height: 48rem; }
+
+    /* Posts */
+    .post__info-wrapper { padding: 3rem 0 0; }
+
+    /* Join us */
+    .join-us {
+        padding: 10rem 1.5rem 18rem 6rem;
+    }
+
+    .join-us h1 {
+        font-size: 7rem;
+        line-height: 8.3rem;
+    }
+
+    /* Footer */
+    footer,
+    .socials__container {
+        text-align: center;
+    }
+
+    /* Search */
+    input[type=search] { font-size: 5rem; }
 }
 
+@media (max-width: 575.98px) {
 
+    /* Heading */
+    h1 {
+        font: 500 4.5rem/6rem 'Butler', serif;
+    }
 
+    /* Logo */
+    .logo {
+        font-size: 3.6rem;
+    }
 
+    .scroll-not-top .logo {
+        font-size: 3rem;
+    }
+
+    /* Hero Section */
+    .hero__container {
+        height: 40rem;
+    }
+
+    .hero__container svg {
+        top: 5rem;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+
+    /* Our Offers Section - Training & Gym Yoga */
+    .offers__link img { width: 100%; }
+    .offers__link--yoga { margin-top: 3rem; }
+    
+    /* Features - Plan Your Visit */
+    .feature {
+        min-height: auto;
+        padding: 4rem 2rem;
+    }
+
+    .feature__btn {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        margin: 1rem auto 0;
+    }
+
+    /* Footer */
+    .footer-nav__container { padding: 4rem 2rem; }
+
+    /* News & Social Section */
+    .blog-article__figure {
+        float: none;
+        margin-bottom: 3rem;
+    }
+
+    .owl-carousel .owl-item {
+        text-align: center;
+    }
+
+    /* Join us */
+    .join-us {
+        padding: 10rem 1.5rem 18rem 1.5rem;
+        margin: 0 3rem 31.5rem 3rem;
+    }
+
+    .join-us h1 {
+        font-size: 4.2rem;
+        line-height: 5.3rem;
+    }
+    .join-us__form .form-control::-webkit-input-placeholder { font-size: 1.3rem; }
+    .join-us__form .form-control::-moz-placeholder { font-size: 1.3rem; }
+    .join-us__form .form-control:-ms-input-placeholder { font-size: 1.3rem; }
+    .join-us__form .form-control:-moz-placeholder { font-size: 1.3rem; }
+    
+    .join-us__form .form-control { padding: 1rem 2rem; }
+    .btn--submit { padding: 0 3rem;}
+}
+
+@media (max-width: 320px) {
+    .join-us__form .form-control { padding: 1rem; }
+    .btn--submit { padding: 0 2rem; }
+}
