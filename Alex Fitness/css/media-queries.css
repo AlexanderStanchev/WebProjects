@@ -151,7 +151,7 @@
     }
 }
 
-@media (max-width:767.98px) {
+@media (max-width: 767.98px) {
 
     /* Navigation */
     .main-nav {
@@ -189,6 +189,8 @@
     .feature { min-height: 48rem; }
 
     /* Posts */
+    .post__figure { width: 100%; }
+    .post__figure img { width: 100%; object-fit: cover; }
     .post__info-wrapper { padding: 3rem 0 0; }
 
     /* Join us */
