@@ -1,6 +1,0 @@
-<svg 
- xmlns="http://www.w3.org/2000/svg"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- width="83px" height="88px">
-<text kerning="auto" font-family="Myriad Pro" fill="rgb(0, 0, 0)" transform="matrix( 10.7299747193246, 0, 0, 10.7299747193246,9.980699261984, 177.384315735924)" font-size="21.059px"><tspan font-size="21.059px" font-family="BerlinSansFBDemi" font-weight="bold" fill="#333332">&#8220;</tspan></text>
-</svg>

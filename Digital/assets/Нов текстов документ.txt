@@ -1,6 +1,0 @@
-<svg 
- xmlns="http://www.w3.org/2000/svg"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- width="144px" height="56px">
-<text kerning="auto" font-family="Myriad Pro" fill="rgb(0, 0, 0)" transform="matrix( 2.15998125880934, 0, 0, 2.15998125880933,0.66337895593328, 45.2798500704747)" font-size="27.778px"><tspan font-size="27.778px" font-family="Lato" fill="#FFFFFF">digital</tspan></text>
-</svg>
