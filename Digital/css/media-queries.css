@@ -1,0 +1,159 @@
+/* 
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+
+
+
+
+
+@media (min-width: 1200px) {
+
+} */
+@media (max-width: 1199.98px) {
+    .team::after {
+        content: none;
+    }
+    .person {
+        margin-top: 3rem;
+    }
+    nav a {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .about-us h1 {
+        position: relative;
+        top: auto;
+        right: auto;
+        width: 100%;
+        font-size: 40rem;
+        line-height: 35rem;
+    }
+    .quotes {
+        top: -3rem;
+        left: 1.5rem;
+    }
+    .skills {
+        padding-right: 0;
+        margin: 0 auto;
+    }
+    header {
+        padding: 1rem 3rem;
+    }
+    .price-box--gradient {
+        margin-left: 0;
+        margin-bottom: 9.5rem;
+    }
+
+    .price-box--white {
+        margin: 9.5rem 0 0 0;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .box-info {
+        padding: 2rem 4rem 3.5rem;
+    }
+    .about-us h1 {
+        font-size: 60rem;
+        top: 6rem;
+        right: -11rem;
+    }
+    .soc a { 
+        margin-right: 1rem;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .white-box {
+        max-width: 65rem;
+    }
+    .services__text {
+        margin-right: 12.5rem;
+    }
+    .logo {
+        margin-bottom: 2rem;
+    }
+     
+}
+
+@media (max-width: 767.98px) {
+    
+    /* Navigation */
+    .main-nav {
+        position: absolute;
+        top: -40rem;
+        left: 0;
+        right: 0;
+        background: #fff;
+        text-align: center;
+        z-index: 2;
+        opacity: 0;
+    }
+
+    .main-nav.visible {
+        top: 0;
+        padding: 3rem 0;
+        opacity: 1;
+        -webkit-transition: ease .5s;
+        -moz-transition: ease .5s;
+        -o-transition: ease .5s;
+        transition: ease .5s;
+        -webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .05);
+        box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .05);
+    }
+
+    nav a {
+        display: block;
+        color: #000;
+    }
+    .box {
+        margin-bottom: 7rem;
+    }
+    .box-info {
+        max-width: 38.6rem;
+        margin: 0 auto;
+    }
+    .about-us h1 {
+        line-height: 45rem;
+        padding-left: 3.5rem;
+        overflow: hidden;
+    }
+    .white-box {
+        position: relative;
+        top: auto;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+        margin: 0 1.5rem 3rem;
+    }
+
+    .services__text {
+        max-width: 100%;
+        text-align: center;
+        margin: 0;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    .services-box {
+        left: 0;
+        right: 0;
+    }
+
+
+}
+
+@media (max-width: 575.98px) {
+    .hero {
+        height: 80rem;
+    }
+    .social-icons a {
+        margin-bottom: 2rem;
+    }
+}

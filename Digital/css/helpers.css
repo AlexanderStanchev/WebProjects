@@ -9,6 +9,7 @@
 .mt_70 { margin-top: 7rem; }
 .mt-155 { margin-top: -15.5rem; }
 .mb_10 { margin-bottom: 1rem; }
+.mb_15 { margin-bottom: 1.5rem; }
 .mb_25 { margin-bottom: 2.5rem; }
 .mb_30 { margin-bottom: 3rem; }
 .mb_35 { margin-bottom: 3.5rem; }
@@ -24,7 +25,7 @@
 .pl_10 { padding-left: 1rem; }
 .pl_45 { padding-left: 4.5rem; }
 .pb_30 { padding-bottom: 3rem; }
-
+.ptb_65 { padding-top: 6.5rem; padding-bottom: 6.5rem; }
 /* Font size */
 
 .fs_17 { font-size: 1.7rem; }
@@ -44,9 +45,9 @@
 .opacity_0 { opacity: 0; }
 
 /* Widths */
-.mw_970 { max-width: 97rem; }
 .mw_490 { max-width: 49rem; }
-
+.mw_810 { max-width: 81rem; }
+.mw_970 { max-width: 97rem; }
 /*Height*/
 .hi_124 { height: 12.4rem; }
 .hi_134 { height: 13.4rem; }

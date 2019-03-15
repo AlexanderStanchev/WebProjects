@@ -4,45 +4,29 @@ $(window).on('load', function () {
 
 $(document).ready(function () {
     // Hide Header on on scroll down
-    var $didScroll;
-        $lastScrollTop = 0;
-        $delta = 5;
-        $navbarHeight = $('header').outerHeight();
-            
-    $(window).scroll(function () {
-        $didScroll = true;
+    var $prevScrollpos = $(window).scrollTop();
+    var $headerHeight = $('header').outerHeight();
+    
+    $(window).scroll(function () {  
+        var $currentScrollPos = $(window).scrollTop();
+        
+        if ($prevScrollpos > $currentScrollPos) {
+            $('header').addClass('sticky').css('top', 0);
+        } else {
+            $('header').css('top', -$headerHeight);
+        }
+        $prevScrollpos = $currentScrollPos;
+
+        if ($currentScrollPos === 0) {
+            $('header').removeClass('sticky');
+        }
     });
 
-    setInterval(function () {
-        if ($didScroll) {
-            hasScrolled();
-            $didScroll = false;
-        }
-    }, 250);
-
-    function hasScrolled() {
-        var $st = $(this).scrollTop();
-
-        // Make sure they scroll more than delta
-        if (Math.abs($lastScrollTop - $st) <= $delta)
-            return;
-
-        // If they scrolled down and are past the navbar, add class .nav-up.
-        // This is necessary so you never see what is "behind" the navbar.
-        if ($st > $lastScrollTop && $st > $navbarHeight) {
-            // Scroll Down
-            $('header').removeClass('nav-down').addClass('nav-up');
-        } else {
-            if ($st + $(window).height() < $(document).height()) {
-                // Scroll Up
-                $('header').removeClass('nav-up').addClass('nav-down');
-            }
-        }
-        $lastScrollTop = $st;
-        if ($st < $navbarHeight) {
-             $('header').removeClass('nav-up, nav-down')
-        }
-    }
+    // Click toggle button for mobile nav
+    $('.open-nav').on('click', function () {
+        $(this).toggleClass('open');
+        $('.main-nav').toggleClass('visible');
+    });
 
     // Progress Bar
     $('.progress .progress-bar').css("width",
@@ -51,7 +35,7 @@ $(document).ready(function () {
         }
     );
     
-    // Move A letter on mouse MouseMove
+    // Move letter 'A' on mouse MouseMove
     if ($(".about-us h1").length) {
         backgroundMouseMove(".about-us h1", 30);
     }
