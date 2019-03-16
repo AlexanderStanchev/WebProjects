@@ -1,31 +1,22 @@
-/* 
-
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-
-}
-
-
-
-
-
-
-@media (min-width: 1200px) {
-
-} */
 @media (max-width: 1199.98px) {
+    .main-nav a {
+        padding: 1rem;
+    }
+
     .team::after {
         content: none;
     }
+
     .person {
         margin-top: 3rem;
-    }
-    nav a {
-        padding: 1rem;
     }
 }
 
 @media (max-width: 991.98px) {
+    .header {
+        padding: 1rem 3rem;
+    }
+
     .about-us h1 {
         position: relative;
         top: auto;
@@ -34,24 +25,24 @@
         font-size: 40rem;
         line-height: 35rem;
     }
+
     .quotes {
         top: -3rem;
         left: 1.5rem;
     }
+
     .skills {
         padding-right: 0;
         margin: 0 auto;
     }
-    header {
-        padding: 1rem 3rem;
-    }
-    .price-box--gradient {
-        margin-left: 0;
-        margin-bottom: 9.5rem;
-    }
 
     .price-box--white {
         margin: 9.5rem 0 0 0;
+    }
+
+    .price-box--gradient {
+        margin-left: 0;
+        margin-bottom: 9.5rem;
     }
 }
 
@@ -59,28 +50,33 @@
     .box-info {
         padding: 2rem 4rem 3.5rem;
     }
+
     .about-us h1 {
         font-size: 60rem;
         top: 6rem;
         right: -11rem;
     }
-    .soc a { 
-        margin-right: 1rem;
+    .skills {
+        padding-right: 3rem
     }
-
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-    .white-box {
-        max-width: 65rem;
-    }
-    .services__text {
-        margin-right: 12.5rem;
-    }
     .logo {
         margin-bottom: 2rem;
     }
-     
+
+    .box-info {
+        padding: 2rem 1rem 3.5rem;
+    }
+
+    .white-box {
+        max-width: 65rem;
+    }
+
+    .services__content {
+        margin-right: 12.5rem;
+    }     
 }
 
 @media (max-width: 767.98px) {
@@ -99,7 +95,7 @@
 
     .main-nav.visible {
         top: 0;
-        padding: 3rem 0;
+        padding: 5.5rem 0 2rem;
         opacity: 1;
         -webkit-transition: ease .5s;
         -moz-transition: ease .5s;
@@ -108,23 +104,36 @@
         -webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .05);
         box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .05);
     }
+    .open-nav.open {
+        position: absolute;
+        top: 2.8rem;
+        right: 3rem;
+    }
 
-    nav a {
+    .main-nav a {
         display: block;
         color: #000;
     }
+
     .box {
         margin-bottom: 7rem;
     }
+
     .box-info {
         max-width: 38.6rem;
         margin: 0 auto;
     }
+
     .about-us h1 {
         line-height: 45rem;
         padding-left: 3.5rem;
         overflow: hidden;
     }
+
+    .about-us {
+        margin: 10rem auto;
+    }
+    
     .white-box {
         position: relative;
         top: auto;
@@ -134,26 +143,77 @@
         margin: 0 1.5rem 3rem;
     }
 
-    .services__text {
+    .services__content {
         max-width: 100%;
         text-align: center;
         margin: 0;
         padding-top: 5rem;
         padding-bottom: 5rem;
     }
+
     .services-box {
         left: 0;
         right: 0;
     }
-
-
+    .media-body {
+        padding-left: 0;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
 }
 
 @media (max-width: 575.98px) {
     .hero {
         height: 80rem;
     }
-    .social-icons a {
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .progress .value {
+        font-size: 2rem;
+    }
+
+    .title {
+        font-size: 4.5rem;
+    }
+    
+    .socials .title {
+        margin-top: 5.5rem;
+        margin-bottom: 5.5rem;
+    }
+
+    .social-icons {
+        padding-bottom: 3.5rem;
+    }
+
+    .social-icon__link {
+        -webkit-flex: 1 0 33.3333333%;
+            -ms-flex: 1 0 33.3333333%;
+                flex: 1 0 33.3333333%;
         margin-bottom: 2rem;
     }
+    .social-icon__link .fab {
+        width: 6rem;
+        height: 6rem;
+        font-size: 2.6rem;
+    }
+
+    .social-icon__link .fab:before {
+        line-height: 5.5rem;
+    }
 }
+
+
+/* 
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+
+@media (min-width: 1200px) {
+
+} */
