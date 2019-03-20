@@ -3,22 +3,23 @@ $(window).on('load', function () {
 });
 
 $(document).ready(function () {
+   
     // Hide Header on on scroll down
     var $prevScrollpos = $(window).scrollTop();
-    var $headerHeight = $('header').outerHeight();
+    var $headerHeight = $('.header').outerHeight();
     
     $(window).scroll(function () {  
         var $currentScrollPos = $(window).scrollTop();
         
         if ($prevScrollpos > $currentScrollPos) {
-            $('header').addClass('sticky').css('top', 0);
+            $('.header').addClass('sticky').css('top', 0);
         } else {
-            $('header').css('top', -$headerHeight);
+            $('.header').css('top', -$headerHeight);
         }
         $prevScrollpos = $currentScrollPos;
 
         if ($currentScrollPos === 0) {
-            $('header').removeClass('sticky');
+            $('.header').removeClass('sticky');
         }
     });
 

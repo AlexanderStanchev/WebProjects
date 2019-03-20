@@ -137,9 +137,9 @@
     .white-box {
         position: relative;
         top: auto;
-        -webkit-transform: none;
-        -ms-transform: none;
-        transform: none;
+        -webkit-transform: none !important;
+        -ms-transform: none !important;
+        transform: none !important;
         margin: 0 1.5rem 3rem;
     }
 
